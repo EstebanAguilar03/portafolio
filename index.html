@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esteban Aguilar | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <div class="menu-toggle">☰</div>
+    <div class="nav-left">
+      <a href="#home">Inicio</a>
+      <a href="#studies">Estudios</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#contact">Contacto</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="mailto:estebansosa20042004@gmail.com" class="nav-email">
+        <i class="fas fa-envelope"></i> estebansosa20042004@gmail.com
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="images/art.png" class="profile-img">
+
+    <h1>Esteban Aguilar</h1>
+    <p>Técnico en Redes & software</p>
+  </div>
+</section>
+
+<!-- STUDIES -->
+<section id="studies" class="section">
+  <h2>Estudios</h2>
+
+  <div class="studies-container">
+
+    <div class="study-card">
+      <h3>Ingeniero Tecnológico en Electrónica</h3>
+      <p>2026 - Actualidad</p>
+    </div>
+
+    <div class="study-card">
+      <h3>Técnico en Redes y Software</h3>
+      <p>2024 - 2025</p>
+    </div>
+
+    <div class="study-card">
+      <h3>Bachiller Tecnológico en Informática</h3>
+      <p>2021 - 2023</p>
+    </div>
+
+  </div>
+
+  <!-- CURSOS -->
+  <h3 class="sub-title">Cursos</h3>
+  <p class="course-source">Cisco Networking Academy</p>
+
+  <div class="courses-tags">
+    <span onclick="openModal('images/englishforit.PNG')">Inglés para IT</span>
+    <span onclick="openModal('images/introductioncybersecurity.PNG')">Introducción al Cyberseguridad</span>
+    <span onclick="openModal('images/conceptosbasicosredes.PNG')">Conceptos básicos de redes</span>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Proyectos</h2>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Reparación y Mantenimiento de PCs</h3>
+      <p>Soporte técnico, limpieza y diagnóstico de equipos.</p>
+
+      <div class="skills">
+        <span>Hardware</span>
+        <span>Diagnóstico</span>
+        <span>Limpieza</span>
+        <span>Optimización</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>GreenHabit</h3>
+      <p>App para reducir consumo energético.</p>
+
+      <div class="skills">
+        <span>Flutter</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="skills" class="section">
+  <h2>Habilidades</h2>
+
+  <!-- REDES -->
+  <h3 class="skills-subtitle">Redes</h3>
+  <div class="skills">
+    <span>Configuración de redes</span>
+    <span>Direcciones IP</span>
+    <span>Routers</span>
+    <span>Conectividad</span>
+    <span>TCP/IP</span>
+    <span>Subnetting</span>
+  </div>
+
+  <!-- SOPORTE IT -->
+  <h3 class="skills-subtitle">Soporte IT</h3>
+  <div class="skills">
+    <span>Soporte técnico a usuarios</span>
+    <span>Resolución de incidencias</span>
+    <span>Instalación de sistemas</span>
+    <span>Configuración de sistemas operativos</span>
+    <span>Optimización de equipos</span>
+    <span>Mantenimiento de PCs</span>
+    <span>Instalación de software</span>
+  </div>
+
+  <!-- DESARROLLO -->
+  <h3 class="skills-subtitle">Desarrollo</h3>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+    <span>Flutter</span>
+  </div>
+
+  <!-- HABILIDADES BLANDAS -->
+  <h3 class="skills-subtitle">Otros</h3>
+  <div class="skills">
+    <span>Inglés</span>
+    <span>Trabajo en equipo</span>
+    <span>Resolución de problemas</span>
+    <span>Proactividad</span>
+  </div>
+
+</section><!-- ABOUT -->
+<section id="about" class="section">
+  <h2>Sobre mí</h2>
+
+  <p class="about-text">
+    Soy estudiante orientado al soporte técnico, redes y sistemas.
+    Me gusta resolver problemas, trabajar con hardware y ayudar a usuarios.
+    En mi tiempo libre realizo mantenimiento y reparación de computadoras.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contacto</h2>
+
+  <div class="contact-icons">
+
+    <a href="https://wa.me/59892428015" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://github.com/EstebanconE" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/esteban-aguilar-a55a88343/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modal-img" class="modal-content">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
